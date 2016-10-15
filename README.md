@@ -56,7 +56,7 @@ A program a hirhedt Neptun rendszer egy leegyszerűsített, de határozottan nem
   - **Hallgató:** Kurzusok keresése, oktatók keresése, kurzus felvétele / leadása, felvett kurzusok megtekintése
   - **Oktató:** Új kurzus meghirdetése, oktatott kurzusok megtekintése, jelentkezett hallgatók megtekintése, létszám növelése / csökkentése, kurzus törlése
   - **Közös tulajdonságok:** Bejelentkezés, jelszó módosítása, kijelentkezés
-  KÉÉPEK
+![](Images/nomnmoml/hasznalatiesetdiagram.png)
 
 #### Példa egy folyamatra:
 Hallgatóként egy kurzusra jelentkezés
@@ -65,7 +65,7 @@ Hallgatóként egy kurzusra jelentkezés
   3. Ha tudja elveszi, ha nem új kurzust keres
   4. Vagy végez a tárgyfelvétellel vagy felveszi a többi tárgyát is
   5. Kijelentkezik
-  KÉÉPEK
+![](Images/nomnmoml/folyamatabra.png)
 
 ### Tervezés
 #### Oldaltérkép
@@ -128,10 +128,14 @@ Hallgatóként egy kurzusra jelentkezés
 * POST/profil: felhasználói adatok felküldése
 
 #### Oldalvázlatok
-KÉÉÉPEK
-KÉÉÉPEK
-KÉÉÉPEK
-KÉÉÉPEK
+![](Images/mockup/Bejelentkezés.png)
+![](Images/mockup/Főoldal, Adminisztrátor, Oktató.png)
+![](Images/mockup/Főoldal, Hallgató.png)
+![](Images/mockup/Hallgatók.png)
+![](Images/mockup/Kurzusok.png)
+![](Images/mockup/Oktatók.png)
+![](Images/mockup/Profil.png)
+![](Images/mockup/Tárgyak.png)
 
 #### Osztálymodell
-Kééépek
+![](Images/nomnmoml/osztalymodell.png)
