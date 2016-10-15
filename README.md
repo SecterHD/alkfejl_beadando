@@ -56,7 +56,7 @@ A program a hirhedt Neptun rendszer egy leegyszerűsített, de határozottan nem
   - **Hallgató:** Kurzusok keresése, oktatók keresése, kurzus felvétele / leadása, felvett kurzusok megtekintése
   - **Oktató:** Új kurzus meghirdetése, oktatott kurzusok megtekintése, jelentkezett hallgatók megtekintése, létszám növelése / csökkentése, kurzus törlése
   - **Közös tulajdonságok:** Bejelentkezés, jelszó módosítása, kijelentkezés
-  NOMNOMNOML
+  KÉÉPEK
 
 #### Példa egy folyamatra:
 Hallgatóként egy kurzusra jelentkezés
@@ -65,72 +65,67 @@ Hallgatóként egy kurzusra jelentkezés
   3. Ha tudja elveszi, ha nem új kurzust keres
   4. Vagy végez a tárgyfelvétellel vagy felveszi a többi tárgyát is
   5. Kijelentkezik
-  NOM NOM NOM
+  KÉÉPEK
 
 ### Tervezés
 #### Oldaltérkép
-Publikus:
-  Belépés
-Bejelentkezett:
-  Főoldal
-    Adminisztrátor, oktató:
-      Hallgatók
-      Oktatók
-      Tárgyak
-    Hallgató:
-      Felvett tárgyak
-  Adatok módosítása
-  Hallgatók
-    Adminisztrátor:
-      Új hallgató felvétele
-      Törlés
-  Oktatók
-    Adminisztrátor:
-      Új oktató felvétele
-      Törlés
-  Tárgyak
-    Adminisztrátor:
-      Új tárgy felvétele
-  Kurzusok
-    Adminisztrátor, oktató:
-      Új kurzus felvétele
-      Módosítás
-      Törlés
-    Hallgató:
-      Felvesz
+* **Publikus:**
+  - Belépés
+* **Bejelentkezett:**
+  - Főoldal
+    - Adminisztrátor, oktató:
+      - Hallgatók
+      - Oktatók
+      - Tárgyak
+    - Hallgató:
+      - Felvett tárgyak
+  - Adatok módosítása
+  - Hallgatók
+    - Adminisztrátor:
+      - Új hallgató felvétele
+      - Törlés
+  - Oktatók
+    - Adminisztrátor:
+      - Új oktató felvétele
+      - Törlés
+  - Tárgyak
+    - Adminisztrátor:
+      - Új tárgy felvétele
+  - Kurzusok
+    - Adminisztrátor, oktató:
+      - Új kurzus felvétele
+      - Módosítás
+      - Törlés
+    - Hallgató:
+      - Felvesz
 
 #### Végpontok
-GET/login: bejelentkező oldal
-POST/login: bejelentkező adatok felküldése
-GET/logout: kijelentkező oldal
-GET/: főoldal
-
-GET/hallgatok/list: hallgatók kilistázása
-GET/hallgatok/new: új hallgató felvétele
-POST/hallgatok/new: új hallgató felvételéhez szükséges adatok felküldése
-GET/hallgatok/edit=id: hallgató módosítása
-POST/hallgatok/edit=id: hallgató módosítása, adatok felküldése
-
-GET/oktatok/list: oktatók kilistázása
-GET/oktatok/new: új oktató felvétele
-POST/oktatok/new: új oktató felvételéhez szükséges adatok felküldése
-GET/hallgatok/edit=id: oktató módosítása
-POST/hallgatok/edit=id: oktató módosítása, adatok felküldése
-
-GET/targyak/list: tárgyak kilistázása
-GET/targyak/new: új tárgy 
-POST/targyak/new: új tárgy felvételéhez szükséges adatok felküldése
-GET/hallgatok/edit=id: tárgy módosítása
-POST/hallgatok/edit=id: tárgy módosítása, adatok felküldése
-
-GET/kurzusok/list: kurzusok kilistázása
-GET/kurzusok/new: új kurzus felvétele
-POST/kurzusok/new: új kurzus felvételéhez szükséges adatok felküldése
-GET/hallgatok/edit=id: kurzus módosítása
-POST/hallgatok/edit=id: kurzus módosítása, adatok felküldése
-
-GET/profil: felhasználói adatok
-POST/profil: felhasználói adatok felküldése
+* GET/login: bejelentkező oldal
+* POST/login: bejelentkező adatok felküldése
+* GET/logout: kijelentkező oldal
+* GET/: főoldal
+* GET/hallgatok/list: hallgatók kilistázása
+* GET/hallgatok/new: új hallgató felvétele
+* POST/hallgatok/new: új hallgató felvételéhez szükséges adatok felküldése
+* GET/hallgatok/edit=id: hallgató módosítása
+* POST/hallgatok/edit=id: hallgató módosítása, adatok felküldése
+* GET/oktatok/list: oktatók kilistázása
+* GET/oktatok/new: új oktató felvétele
+* POST/oktatok/new: új oktató felvételéhez szükséges adatok felküldése
+* GET/hallgatok/edit=id: oktató módosítása
+* POST/hallgatok/edit=id: oktató módosítása, adatok felküldése
+* GET/targyak/list: tárgyak kilistázása
+* GET/targyak/new: új tárgy 
+* POST/targyak/new: új tárgy felvételéhez szükséges adatok felküldése
+* GET/hallgatok/edit=id: tárgy módosítása
+* POST/hallgatok/edit=id: tárgy módosítása, adatok felküldése
+* GET/kurzusok/list: kurzusok kilistázása
+* GET/kurzusok/new: új kurzus felvétele
+* POST/kurzusok/new: új kurzus felvételéhez szükséges adatok felküldése
+* GET/hallgatok/edit=id: kurzus módosítása
+* POST/hallgatok/edit=id: kurzus módosítása, adatok felküldése
+* GET/profil: felhasználói adatok
+* POST/profil: felhasználói adatok felküldése
 
 #### Oldalvázlatok
 KÉÉÉPEK
@@ -139,22 +134,4 @@ KÉÉÉPEK
 KÉÉÉPEK
 
 #### Osztálymodell
-[User | 
-name: String
-cCode: Int
-password: String]
-
-[Subject |
-name: String]
-
-[Course |
-id: Int
-capacity: Int]
-
-[Student] -:> [User]
-[Administrator] -:> [User]
-[Teacher] -:> [User]
-[Subject] +-> 1..* [Course]
-[Course] +-> 1 [Teacher]
-[Course] +-> 0..* [Student]
-[Student] +-> 0..* [Subject]
+Kééépek
