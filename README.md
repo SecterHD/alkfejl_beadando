@@ -5,7 +5,7 @@ Készítette: Katona Bence (D7JO4Q)
 #### Feladat és célkitűzés
 A program a hirhedt Neptun rendszer egy leegyszerűsített, de határozottan nem rosszabb, megvalósítása. A fő feladat a tantárgyfelvétel, regisztráció és felhasználói adatmódosítás. A rendszer neve Course, az angol kurzus szóból származva.
 #### Funkcionális követelmények:
-Adminisztrátorként:
+* Adminisztrátorként:
 	Főoldalon bejelentkezés
 	Jelszó módosítása
 	Új hallgató felvétele (név, ckód, jelszó)
@@ -14,7 +14,7 @@ Adminisztrátorként:
 	Tárgy oktatóhoz való hozzárendelése
 	Törlések
 	Kijelentkezés
-Hallgatóként:
+* Hallgatóként:
 	Főoldalon bejelentkezés (ckód, jelszó)
 	Jelszó módosítása
 	Tárgyakra lebontva a kurzusok között szabadon böngészni
@@ -23,7 +23,7 @@ Hallgatóként:
 	Felvett tárgyak megtekintése
 	Leadni egy kurzust, bármikor mivel nagyon jófej ez az egyetem
 	Kijelentkezés
-Oktatóként:
+* Oktatóként:
 	Főoldalon bejelentkezni (ckód, jelszó)
 	Jelszó módosítása
 	Új kurzust (oktatott kurzusok közül) meghirdetni tetszőleges számú hallgatónak
