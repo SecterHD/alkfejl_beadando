@@ -4,46 +4,52 @@ Készítette: Katona Bence (D7JO4Q)
 ### Követelményanalízis
 #### Feladat és célkitűzés
 A program a hirhedt Neptun rendszer egy leegyszerűsített, de határozottan nem rosszabb, megvalósítása. A fő feladat a tantárgyfelvétel, regisztráció és felhasználói adatmódosítás. A rendszer neve Course, az angol kurzus szóból származva.
+
 #### Funkcionális követelmények:
 * Adminisztrátorként:
-	Főoldalon bejelentkezés
-	Jelszó módosítása
-	Új hallgató felvétele (név, ckód, jelszó)
-	Új oktató felvétele (név, ckód, jelszó)
-	Új tárgy felvétele (név, tematika)
-	Tárgy oktatóhoz való hozzárendelése
-	Törlések
-	Kijelentkezés
+  - Főoldalon bejelentkezés
+  - Jelszó módosítása
+  - Új hallgató felvétele (név, ckód, jelszó)
+  - Új oktató felvétele (név, ckód, jelszó)
+  - Új tárgy felvétele (név, tematika)
+  - Tárgy oktatóhoz való hozzárendelése
+  - Törlések
+  - Kijelentkezés
+
 * Hallgatóként:
-	Főoldalon bejelentkezés (ckód, jelszó)
-	Jelszó módosítása
-	Tárgyakra lebontva a kurzusok között szabadon böngészni
-	Oktatók között szabadon böngészni, hogy milyen tárgyakat oktatnak és melyik kurzust
-	Felvenni egy tárgyat, tehát jelentkezni egy kurzusra
-	Felvett tárgyak megtekintése
-	Leadni egy kurzust, bármikor mivel nagyon jófej ez az egyetem
-	Kijelentkezés
+  - Főoldalon bejelentkezés (ckód, jelszó)
+  - Jelszó módosítása
+  - Tárgyakra lebontva a kurzusok között szabadon böngészni
+  - Oktatók között szabadon böngészni, hogy milyen tárgyakat oktatnak és melyik kurzust
+  - Felvenni egy tárgyat, tehát jelentkezni egy kurzusra
+  - Felvett tárgyak megtekintése
+  - Leadni egy kurzust, bármikor mivel nagyon jófej ez az egyetem
+  - Kijelentkezés
+
 * Oktatóként:
-	Főoldalon bejelentkezni (ckód, jelszó)
-	Jelszó módosítása
-	Új kurzust (oktatott kurzusok közül) meghirdetni tetszőleges számú hallgatónak
-	Oktatott kurzusok megtekintése
-	Kurzusra jelentkezettek megtekintése
-	Kurzus létszámának növelése / csökkentése
-	Kurzus törlése
-	Kijelentkezés
+  - Főoldalon bejelentkezni (ckód, jelszó)
+  - Jelszó módosítása
+  - Új kurzust (oktatott kurzusok közül) meghirdetni tetszőleges számú hallgatónak
+  - Oktatott kurzusok megtekintése
+  - Kurzusra jelentkezettek megtekintése
+  - Kurzus létszámának növelése / csökkentése
+  - Kurzus törlése
+  - Kijelentkezés
+
 #### Nem funkcionális követelmények:
-	Ergonomikus elrendezés, felhasználóbarát felület
-	Könnyen megérthető és elsajátítható működés
-	Gyors működés
-	Biztonságos, jelszóval védett adatok
-	Egyértelmű hibajelzések
-	Könnyen karbantartható és bővíthető
+  - Ergonomikus elrendezés, felhasználóbarát felület
+  - Könnyen megérthető és elsajátítható működés
+  - Gyors működés
+  - Biztonságos, jelszóval védett adatok
+  - Egyértelmű hibajelzések
+  - Könnyen karbantartható és bővíthető
+
 #### Szakterületi fogalomjegyzék:
 	Tárgy - Tudományterület, amelyről tanulunk az egyetemen.
 	Kurzus - A kurzus az a keret, amelyben a hallgatók meghatározott rend (előadás, gyakorlat, házi feladat, stb.) szerint gyarapítják tudásukat, és arról számot is adnak.
 	Hallgató - Egy felsőoktatási intézményben tanuló személy.
 	Oktató - Egy felsőoktatási intézményben tanító személy.
+
 #### Használatieset-modell, szerepkörök
 Vendég: Csak a publikus a oldalt éri el, ami egy bejelentkezési felület
 Adminisztrátor: Felhasználók felvétele, új tárgy felvétele, oktatók tárgyainak rendezése, törlési műveletek
@@ -85,6 +91,7 @@ Közös tulajdonságok: Bejelentkezés, jelszó módosítása, kijelentkezés
 		[<actor>Adminisztrátor] - [<usecase>Hallgató törlése]
 		[<actor>Adminisztrátor] - [<usecase>Oktató törlése]
 		[<actor>Adminisztrátor] - [<usecase>Tárgy törlése]
+
 #### Példa egy folyamatra:
 Hallgatóként egy kurzusra jelentkezés
 	1. A felhasználó a főoldalra érkezve bejelentkezik halgatóként
@@ -105,6 +112,7 @@ Hallgatóként egy kurzusra jelentkezés
 	[<choice> Új kurzus felvétele] Nem -> [<state> Kijelentkezés]
 	[<state> Kijelentkezés] -> [<end>End]
 	[<choice> Új kurzus felvétele] Igen -> [<state> Kurzus;keresése]
+
 ### Tervezés
 #### Oldaltérkép
 Publikus:
@@ -136,6 +144,7 @@ Bejelentkezett:
 			Törlés
 		Hallgató:
 			Felvesz
+
 #### Végpontok
 GET/login: bejelentkező oldal
 POST/login: bejelentkező adatok felküldése
@@ -168,11 +177,13 @@ POST/hallgatok/edit=id: kurzus módosítása, adatok felküldése
 
 GET/profil: felhasználói adatok
 POST/profil: felhasználói adatok felküldése
+
 #### Oldalvázlatok
 KÉÉÉPEK
 KÉÉÉPEK
 KÉÉÉPEK
 KÉÉÉPEK
+
 #### Osztálymodell
 [User | 
 name: String
