@@ -23,7 +23,7 @@ A program a hirhedt Neptun rendszer egy leegyszerűsített, de határozottan nem
   - Oktatók között szabadon böngészni, hogy milyen tárgyakat oktatnak és melyik kurzust
   - Felvenni egy tárgyat, tehát jelentkezni egy kurzusra
   - Felvett tárgyak megtekintése
-  - Leadni egy kurzust, bármikor mivel nagyon jófej ez az egyetem
+  - Leadni egy kurzust, bármikor mivel ez egy nagyon kedves egyetem
   - Kijelentkezés
 
 * **Oktatóként:**
