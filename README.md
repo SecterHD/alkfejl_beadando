@@ -60,44 +60,44 @@ A program a hirhedt Neptun rendszer egy leegyszerűsített, de határozottan nem
 
 #### Példa egy folyamatra:
 Hallgatóként egy kurzusra jelentkezés
-1. A felhasználó a főoldalra érkezve bejelentkezik halgatóként
-2. Megkeresi a felvenni kívánt kurzust
-3. Ha tudja elveszi, ha nem új kurzust keres
-4. Vagy végez a tárgyfelvétellel vagy felveszi a többi tárgyát is
-5. Kijelentkezik
-NOM NOM NOM
+  1. A felhasználó a főoldalra érkezve bejelentkezik halgatóként
+  2. Megkeresi a felvenni kívánt kurzust
+  3. Ha tudja elveszi, ha nem új kurzust keres
+  4. Vagy végez a tárgyfelvétellel vagy felveszi a többi tárgyát is
+  5. Kijelentkezik
+  NOM NOM NOM
 
 ### Tervezés
 #### Oldaltérkép
 Publikus:
-	Belépés
+  Belépés
 Bejelentkezett:
-	Főoldal
-		Adminisztrátor, oktató:
-			Hallgatók
-			Oktatók
-			Tárgyak
-		Hallgató:
-			Felvett tárgyak
-	Adatok módosítása
-	Hallgatók
-		Adminisztrátor:
-			Új hallgató felvétele
-			Törlés
-	Oktatók
-		Adminisztrátor:
-			Új oktató felvétele
-			Törlés
-	Tárgyak
-		Adminisztrátor:
-			Új tárgy felvétele
-	Kurzusok
-		Adminisztrátor, oktató:
-			Új kurzus felvétele
-			Módosítás
-			Törlés
-		Hallgató:
-			Felvesz
+  Főoldal
+    Adminisztrátor, oktató:
+      Hallgatók
+      Oktatók
+      Tárgyak
+    Hallgató:
+      Felvett tárgyak
+  Adatok módosítása
+  Hallgatók
+    Adminisztrátor:
+      Új hallgató felvétele
+      Törlés
+  Oktatók
+    Adminisztrátor:
+      Új oktató felvétele
+      Törlés
+  Tárgyak
+    Adminisztrátor:
+      Új tárgy felvétele
+  Kurzusok
+    Adminisztrátor, oktató:
+      Új kurzus felvétele
+      Módosítás
+      Törlés
+    Hallgató:
+      Felvesz
 
 #### Végpontok
 GET/login: bejelentkező oldal
