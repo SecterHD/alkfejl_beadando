@@ -45,10 +45,10 @@ A program a hirhedt Neptun rendszer egy leegyszerűsített, de határozottan nem
   - Könnyen karbantartható és bővíthető
 
 #### Szakterületi fogalomjegyzék:
-  - Tárgy - Tudományterület, amelyről tanulunk az egyetemen.
-  - Kurzus - A kurzus az a keret, amelyben a hallgatók meghatározott rend (előadás, gyakorlat, házi feladat, stb.) szerint gyarapítják tudásukat, és arról számot is adnak.
-  - Hallgató - Egy felsőoktatási intézményben tanuló személy.
-  - Oktató - Egy felsőoktatási intézményben tanító személy.
+  - **Tárgy** - Tudományterület, amelyről tanulunk az egyetemen.
+  - **Kurzus** - A kurzus az a keret, amelyben a hallgatók meghatározott rend (előadás, gyakorlat, házi feladat, stb.) szerint gyarapítják tudásukat, és arról számot is adnak.
+  - **Hallgató** - Egy felsőoktatási intézményben tanuló személy.
+  - **Oktató** - Egy felsőoktatási intézményben tanító személy.
 
 #### Használatieset-modell, szerepkörök
   - Vendég: Csak a publikus a oldalt éri el, ami egy bejelentkezési felület
